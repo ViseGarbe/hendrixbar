@@ -4,6 +4,69 @@
 	--green: #d8e27a;
 	--muted: #777d73;
 }
+@font-face {
+	font-family: "DM Sans";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("assets/fonts/dm-sans-400.woff2") format("woff2");
+}
+@font-face {
+	font-family: "DM Sans";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url("assets/fonts/dm-sans-500.woff2") format("woff2");
+}
+@font-face {
+	font-family: "DM Sans";
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url("assets/fonts/dm-sans-600.woff2") format("woff2");
+}
+@font-face {
+	font-family: "DM Sans";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("assets/fonts/dm-sans-700.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Playfair Display";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: url("assets/fonts/playfair-display-500.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Playfair Display";
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url("assets/fonts/playfair-display-600.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Playfair Display";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("assets/fonts/playfair-display-700.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Playfair Display";
+	font-style: italic;
+	font-weight: 500;
+	font-display: swap;
+	src: url("assets/fonts/playfair-display-italic-500.woff2") format("woff2");
+}
+@font-face {
+	font-family: "Playfair Display";
+	font-style: italic;
+	font-weight: 600;
+	font-display: swap;
+	src: url("assets/fonts/playfair-display-italic-600.woff2") format("woff2");
+}
 * {
 	box-sizing: border-box;
 }
@@ -14,7 +77,7 @@ body {
 	margin: 0;
 	background: var(--cream);
 	color: var(--dark);
-	font-family: "DM Sans", "Segoe UI", sans-serif;
+	font-family: "DM Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
 a {
@@ -135,7 +198,7 @@ h1,
 h2,
 h3,
 blockquote {
-	font-family: Georgia, serif;
+	font-family: "Playfair Display", Georgia, serif;
 	font-weight: 500;
 }
 h1 {
@@ -292,7 +355,7 @@ blockquote em {
 	justify-content: center;
 }
 .quote-mark {
-	font: 100px Georgia;
+	font: 100px "Playfair Display", Georgia, serif;
 	color: #839354;
 	line-height: 0.6;
 }
@@ -451,7 +514,7 @@ blockquote em {
 	font-size: 17px;
 }
 .drink-sticker i {
-	font-family: Georgia;
+	font-family: "Playfair Display", Georgia, serif;
 	font-weight: 400;
 }
 .visit {
@@ -516,7 +579,7 @@ blockquote em {
 	display: grid;
 	place-items: center;
 	font:
-		120px Georgia,
+		120px "Playfair Display",
 		serif;
 	color: var(--green);
 	position: relative;
@@ -553,7 +616,7 @@ blockquote em {
 .legal-hero .page-hero-content { bottom: 12%; }
 .legal-hero h1 { font-size: clamp(58px, 8vw, 105px); }
 .legal-content { max-width: 900px; padding: 70px 28px 100px; margin: auto; line-height: 1.8; }
-.legal-content h2 { margin: 42px 0 12px; font: 600 30px Georgia, serif; }
+.legal-content h2 { margin: 42px 0 12px; font: 600 30px "Playfair Display", Georgia, serif; }
 .legal-content p, .legal-content li { color: #53594f; }
 .legal-content li { margin-bottom: 12px; }
 .legal-update { border-left: 3px solid #87964e; padding: 14px 20px; background: #e8eadf; }
@@ -576,7 +639,7 @@ footer {
 }
 .footer-main p {
 	font:
-		italic 24px Georgia,
+		italic 24px "Playfair Display",
 		serif;
 	color: #b7c2ac;
 }
@@ -908,7 +971,7 @@ footer {
 }
 .menu-items h3 {
 	font:
-		500 29px Georgia,
+		500 29px "Playfair Display",
 		serif;
 	margin: 0 0 7px;
 }
@@ -1072,7 +1135,7 @@ footer {
 }
 .event-date strong {
 	font:
-		60px Georgia,
+		60px "Playfair Display",
 		serif;
 	color: var(--green);
 }
