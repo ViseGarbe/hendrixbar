@@ -559,18 +559,6 @@ blockquote em {
 	place-items: center;
 	overflow: hidden;
 }
-.map-panel:before,
-.map-panel:after {
-	content: "";
-	position: absolute;
-	width: 120%;
-	height: 1px;
-	background: #a8b8993d;
-	transform: rotate(-33deg);
-}
-.map-panel:after {
-	transform: rotate(42deg);
-}
 .map-circle {
 	width: 190px;
 	height: 190px;
@@ -584,6 +572,12 @@ blockquote em {
 	color: var(--green);
 	position: relative;
 	z-index: 1;
+}
+.map-circle .map-initial {
+	position: static;
+	font: 120px/1 "Playfair Display", serif;
+	display: block;
+	transform: translateY(-0.02em);
 }
 .map-circle span {
 	position: absolute;
@@ -612,6 +606,10 @@ blockquote em {
 }
 .footer-legal a { text-decoration: underline; text-underline-offset: 3px; }
 .legal-page { padding-top: 88px; background: var(--cream); }
+.legal-page ~ footer,
+body:has(.legal-page) .topbar.innerbar {
+	background: #101711;
+}
 .legal-hero { height: 430px; min-height: 430px; }
 .legal-hero .page-hero-content { bottom: 12%; }
 .legal-hero h1 { font-size: clamp(58px, 8vw, 105px); }
