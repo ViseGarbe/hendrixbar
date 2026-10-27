@@ -145,52 +145,15 @@ a {
 	text-decoration: none;
 }
 .arrow-icon {
-	display: inline-block;
-	position: relative;
-	width: .8em;
-	min-width: .8em;
-	flex: 0 0 .8em;
-	height: .8em;
-	margin-left: .18em;
-	vertical-align: -.04em;
-	color: currentColor;
-}
-.arrow-icon::before,
-.arrow-icon::after {
-	content: "";
-	position: absolute;
-	box-sizing: border-box;
-}
-.arrow-up-right::before {
-	width: .76em;
-	border-top: 1.5px solid currentColor;
-	top: .48em;
-	left: .02em;
-	transform: rotate(-45deg);
-	transform-origin: center;
-}
-.arrow-up-right::after {
-	width: .38em;
-	height: .38em;
-	right: .02em;
-	top: .04em;
-	border-top: 1.5px solid currentColor;
-	border-right: 1.5px solid currentColor;
-}
-.arrow-up::before {
-	height: .72em;
-	border-left: 1.5px solid currentColor;
-	left: 50%;
-	bottom: 0;
-}
-.arrow-up::after {
-	width: .38em;
-	height: .38em;
-	left: 50%;
-	top: .03em;
-	border-top: 1.5px solid currentColor;
-	border-left: 1.5px solid currentColor;
-	transform: translateX(-50%) rotate(45deg);
+	display: inline;
+	flex: 0 0 auto;
+	font-family: "DM Sans", sans-serif;
+	font-size: 1em;
+	font-weight: inherit;
+	font-style: inherit;
+	line-height: inherit;
+	margin-left: .12em;
+	white-space: nowrap;
 }
 button {
 	font: inherit;
@@ -438,8 +401,8 @@ blockquote em {
 }
 .underline-link {
 	display: inline-flex;
-	justify-content: space-between;
-	gap: 45px;
+	justify-content: flex-start;
+	gap: 9px;
 	border-bottom: 1px solid var(--home-border-dark);
 	padding: 12px 0;
 	margin-top: 18px;
