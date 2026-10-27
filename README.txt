@@ -13,4 +13,4 @@ IMPORTANTE PRIMA DELLA PUBBLICAZIONE:
 - Il repository non include acquisti o prenotazioni online, moduli, analytics, pixel o contenuti di terzi incorporati. Rivalutare gli adempimenti se si aggiungono queste funzioni.
 - Il menu attualmente rimanda a Instagram, senza inventare prezzi o cocktail disponibili.
 
-File: index.html, style.css, script.js.
+File: index.html, css/style.css, js/script.js.
