@@ -9,6 +9,7 @@ Le foto del sito sono scaricate localmente da Unsplash e risultano indicate come
 
 ## Immagini attualmente usate
 
+- `assets/images/polar-bear-mark.png` — illustrazione “A polar bear”, orso a riposo su un blocco di ghiaccio, pubblicata da publicdomainvectors.org su [FreeSVG](https://freesvg.org/a-polar-bear) e indicata come pubblico dominio (CC0).
 - `assets/images/home-hero.jpg` — interno di un bar con bicchieri e luci, [Youssef Mubarak](https://unsplash.com/photos/bar-interior-with-hanging-wine-glasses-and-lights-_-NsxUB2DUE).
 - `assets/images/aperitivo.jpg` — drink su tavolo al bar, [Luke Thornton](https://unsplash.com/photos/a-drink-in-a-glass-on-a-wooden-table-9Ubai4FI500).
 - `assets/images/event-night.jpg` — persone sedute al bar con drink, [Shojol Islam](https://unsplash.com/photos/a-group-of-people-sitting-at-a-bar-with-drinks-RDJ52xhrCCI).

@@ -1,24 +1,24 @@
 :root {
-	/* Palette condivisa: colori base e accenti usati in tutto il sito */
-	--dark: #151a16;
-	--cream: #f3f0e8;
-	--green: #d8e27a;
-	--muted: #777d73;
+	/* Palette polare Hendrix: nero profondo, ghiaccio e rosso bordeaux */
+	--dark: #101820;
+	--cream: #f5f8fa;
+	--green: #8ec7df;
+	--muted: #71808a;
 
 	/* Pagina iniziale: testi, superfici e bordi editoriali */
 	--white: #fff;
-	--text-dark: #222920;
-	--text-muted: #62675f;
-	--text-soft: #ddd;
-	--text-bright: #eee;
-	--text-cream: #e9e9e2;
-	--green-pale: #dce4c0;
-	--surface-soft: #e8e9dd;
-	--surface-green-dark: #18231b;
-	--surface-green: #27332b;
-	--surface-olive: #23291c;
-	--surface-olive-brown: #594e38;
-	--border-soft: #d5d6cc;
+	--text-dark: #17232b;
+	--text-muted: #596974;
+	--text-soft: #e1e9ed;
+	--text-bright: #eff7fa;
+	--text-cream: #e7f2f7;
+	--green-pale: #dceef5;
+	--surface-soft: #eaf3f7;
+	--surface-green-dark: #111e28;
+	--surface-green: #233744;
+	--surface-olive: #1b2c39;
+	--surface-olive-brown: #713b49;
+	--border-soft: #d2e0e7;
 
 	/* Hero e immagini: overlay e trasparenze condivisi */
 	--overlay-dark-18: rgba(8, 15, 10, 0.18);
@@ -30,34 +30,38 @@
 	--overlay-white-23: #ffffff3b;
 	--overlay-white-27: #ffffff45;
 	--overlay-white-56: #ffffff90;
-	--overlay-green: #d8e27a;
-	--overlay-dark-75: #151a1675;
-	--overlay-dark-80-hex: #151a1680;
-	--overlay-dark-90: #151a1690;
-	--overlay-dark-60: #151a1699;
-	--overlay-dark-72: #151a16b8;
-	--overlay-dark-73: #151a16ba;
-	--overlay-black-green: #10180fd9;
+	--overlay-green: #8ec7df;
+	--overlay-dark-75: #101820bf;
+	--overlay-dark-80-hex: #101820cc;
+	--overlay-dark-90: #101820e8;
+	--overlay-dark-60: #10182099;
+	--overlay-dark-72: #101820b8;
+	--overlay-dark-73: #101820ba;
+	--overlay-black-green: #101820df;
 
 	/* Pagina iniziale: blocchi intro, esperienza, bevande e visita */
-	--home-green-deep: #4b5646;
-	--home-border-dark: #1a211b;
-	--home-border-green: #bdc8a8;
-	--home-border-green-light: #b6c4a5;
-	--home-border-green-muted: #9aa98a;
-	--home-text-green-soft: #b7c2ac;
+	--home-green-deep: #426170;
+	--home-border-dark: #17232b;
+	--home-border-green: #b7d4e0;
+	--home-border-green-light: #b7d4e0;
+	--home-border-green-muted: #98b7c4;
+	--home-text-green-soft: #b7d4e0;
 
 	/* Pagina Menu */
-	--menu-green-dark: #7d8a54;
-	--menu-border-neutral: #bfc2b6;
+	--menu-green-dark: #8c3045;
+	--menu-border-neutral: #c6d7df;
 
 	/* Pagina Storia */
-	--story-green-dark: #7d8a54;
+	--story-green-dark: #8c3045;
 
 	/* Pagina Eventi */
-	--events-green-dark: #7d8a54;
-	--events-text-light-muted: #b9c0b5;
-	--events-border-green-grey: #899489;
+	--events-green-dark: #8c3045;
+	--events-text-light-muted: #b9cbd3;
+	--events-border-green-grey: #7794a1;
+	--ice: #dceef5;
+	--ice-bright: #a9d8ea;
+	--burgundy: #842d42;
+	--burgundy-dark: #642236;
 }
 
 @font-face {
@@ -166,7 +170,7 @@ button {
 	border-bottom: 1px solid var(--overlay-white-27);
 }
 .brand {
-	font-size: 25px;
+	font-size: 32px;
 	font-weight: 700;
 	letter-spacing: -1.6px;
 	line-height: 0.8;
@@ -177,8 +181,8 @@ footer .footer-logo span {
 }
 .brand small {
 	display: block;
-	font-size: 8px;
-	letter-spacing: 3.4px;
+	font-size: 10px;
+	letter-spacing: 3.2px;
 	margin-top: 9px;
 	font-weight: 500;
 }
@@ -188,7 +192,7 @@ footer .footer-logo span {
 }
 .topbar nav a,
 .nav-cta {
-	font-size: 12px;
+	font-size: 16px;
 	font-weight: 600;
 }
 .topbar nav a:hover,
@@ -204,8 +208,12 @@ footer .footer-logo span {
 	display: none;
 }
 .hero {
-	min-height: 790px;
+	height: 100vh;
 	height: 100svh;
+	height: 100dvh;
+	min-height: 100vh;
+	min-height: 100svh;
+	min-height: 100dvh;
 	position: relative;
 	background: var(--green);
 	color: white;
@@ -741,10 +749,7 @@ footer {
 		background: none;
 		border: 0;
 		color: var(--white);
-		font-size: 24px;
-	}
-	.hero {
-		min-height: 700px;
+		font-size: 28px;
 	}
 	.hero-content {
 		left: 7%;
@@ -877,13 +882,161 @@ footer {
 		animation: none !important;
 	}
 }
+
+/* HENDRIX POLAR EDITION */
+body {
+	background: var(--cream);
+	color: var(--dark);
+}
+.topbar {
+	background: linear-gradient(180deg, rgba(10, 20, 28, .7), transparent);
+	border-bottom-color: rgba(220, 238, 245, .25);
+}
+.brand {
+	text-shadow: 0 2px 18px rgba(0, 0, 0, .24);
+}
+.brand::before {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 34px;
+	height: 34px;
+	margin: -4px 8px 0 0;
+	background: url("assets/images/polar-bear-mark.png") center/contain no-repeat;
+}
+.brand-dot,
+footer .footer-logo span { color: var(--ice-bright); }
+.topbar nav a:hover,
+.text-link:hover { color: var(--ice-bright); }
+.nav-cta {
+	border-color: rgba(220, 238, 245, .6);
+	border-radius: 999px;
+	padding: 12px 19px;
+	backdrop-filter: blur(8px);
+}
+.hero {
+	background: var(--surface-green-dark);
+}
+.hero-photo { filter: saturate(.72) contrast(1.04); }
+.hero-shade {
+	background:
+		linear-gradient(90deg, rgba(8, 18, 27, .82), rgba(13, 34, 47, .28) 88%),
+		linear-gradient(0deg, rgba(8, 18, 27, .7), transparent 48%);
+}
+.hero-content { z-index: 2; }
+.hero-content .eyebrow { font-size: 15px; }
+.hero-content > p { font-size: 19px; }
+.hero h1 em,
+.page-hero h1 em { color: var(--ice-bright); }
+.line { background: var(--burgundy); }
+.button-light {
+	background: var(--ice);
+	color: var(--dark);
+	border-radius: 2px;
+}
+.button-dark { background: var(--burgundy); }
+.section-index { color: #71808a; }
+.intro h2 em,
+.experience h2 em,
+.drinks h2 em,
+.visit h2 em { color: var(--burgundy); }
+.intro { background: #fff; }
+.editorial-quote { background: var(--ice); }
+.quote-mark { color: var(--burgundy); }
+.editorial-quote blockquote em { color: var(--burgundy); }
+.experience,
+.menu-sheet.alt { background: #eaf3f7; }
+.experience-card { background: var(--surface-green-dark); }
+.experience-card span { color: var(--ice-bright); }
+.statement { background: var(--surface-green-dark); }
+.statement-inner > span,
+.page-cta > span,
+.event-philosophy span { color: var(--ice-bright); }
+.statement h2 em { color: var(--ice-bright); }
+.drink-visual { background: var(--ice); }
+.drink-visual img { filter: saturate(.78); }
+.drink-sticker {
+	background: var(--burgundy);
+	color: #fff;
+	border: 5px solid var(--ice);
+}
+.visit { background: var(--ice); }
+.visit .section-index { border-color: #b9d0da; }
+.visit-links a { border-color: #9db9c5; }
+.visit-links a:hover { color: var(--burgundy); }
+.map-panel {
+	background: #172a37;
+	background-image: radial-gradient(circle at 50% 45%, #29485b, #12212c 68%);
+}
+.map-circle { color: var(--ice-bright); border-color: rgba(220, 238, 245, .7); }
+footer { background: #101820; }
+.footer-main p { color: var(--ice-bright); }
+.footer-legal { color: #b9cbd3; }
+.page-hero { background: #12212c; }
+.page-hero-bg { filter: saturate(.7); }
+.page-hero:after {
+	background:
+		linear-gradient(90deg, rgba(9, 20, 29, .85), rgba(12, 33, 45, .3)),
+		linear-gradient(0deg, rgba(9, 20, 29, .75), transparent 55%);
+}
+.page-hero-content { z-index: 2; }
+.page-hero-content .eyebrow { font-size: 16px; }
+.page-hero-content p { font-size: 21px; }
+.events-hero .page-hero-bg {
+	background-image: linear-gradient(135deg, #b9e0ef, #172b38 70%);
+}
+.menu-lead em,
+.story-big em,
+.event-heading em,
+.event-follow h2 em,
+.menu-category-title h2 em,
+.manifesto-copy h2 em { color: var(--burgundy); }
+.category-nav a { border-color: #c6d7df; border-radius: 999px; }
+.category-nav a:hover { background: var(--burgundy); }
+.menu-category-title h2 em { color: var(--burgundy); }
+.page-cta { background: #172a37; }
+.page-cta h2 em,
+.event-info h3 em,
+.event-philosophy em { color: var(--ice-bright); }
+.story-photo-break {
+	background:
+		linear-gradient(rgba(11, 25, 35, .72), rgba(11, 25, 35, .82)),
+		url("assets/images/story-manifesto.jpg") center/cover;
+}
+.story-photo-break span,
+.story-photo-break em { color: var(--ice-bright); }
+.story-manifesto { background: var(--ice); }
+.manifesto-copy h2 em { color: var(--burgundy); }
+.event-card.featured { background: #172a37; }
+.event-date strong { color: var(--ice-bright); }
+.event-one { background-image: linear-gradient(135deg, #98c9dc, #1b3040 70%); }
+.event-small { background: #eaf3f7; }
+.event-small-copy > span { color: var(--burgundy); }
+.event-philosophy {
+	background: radial-gradient(ellipse at 50% 100%, #35576a, #101820 68%);
+}
+.legal-page { background: #f5f8fa; }
+.legal-page ~ footer,
+body:has(.legal-page) .topbar.innerbar { background: #101820; }
+.legal-update { border-color: var(--burgundy); background: var(--ice); }
+@media (max-width: 900px) {
+	.topbar nav { background: #12212c; }
+}
+@media (max-width: 600px) {
+	.brand::before { width: 34px; height: 24px; margin-right: 7px; }
+	.hero-content { z-index: 2; }
+}
 /* INNER PAGES */
 .innerbar {
 	position: absolute;
 }
 .page-hero {
-	height: 78svh;
-	min-height: 650px;
+	height: 100vh;
+	height: 100svh;
+	height: 100dvh;
+	min-height: 100vh;
+	min-height: 100svh;
+	min-height: 100dvh;
 	position: relative;
 	color: var(--white);
 	background: var(--dark);
@@ -1107,15 +1260,11 @@ footer {
 }
 .timeline-row {
 	display: grid;
-	grid-template-columns: 70px 0.8fr 1fr;
+	grid-template-columns: 0.8fr 1fr;
 	gap: 6%;
 	padding: 45px 0;
 	border-bottom: 1px solid var(--border-soft);
 	align-items: start;
-}
-.timeline-no {
-	font-size: 11px;
-	color: var(--muted);
 }
 .timeline-row h3 {
 	font-size: 45px;
@@ -1277,9 +1426,6 @@ footer {
 	margin: auto;
 }
 @media (max-width: 900px) {
-	.page-hero {
-		min-height: 620px;
-	}
 	.menu-lead,
 	.event-heading,
 	.menu-category,
@@ -1295,10 +1441,10 @@ footer {
 		grid-column: auto;
 	}
 	.timeline-row {
-		grid-template-columns: 45px 1fr;
+		grid-template-columns: 1fr;
 	}
 	.timeline-row p {
-		grid-column: 2;
+		grid-column: 1;
 	}
 	.manifesto-photo {
 		min-height: 480px;
@@ -1345,7 +1491,7 @@ footer {
 		padding: 9% 6%;
 	}
 	.timeline-row {
-		grid-template-columns: 32px 1fr;
+		grid-template-columns: 1fr;
 		gap: 15px;
 	}
 	.timeline-row h3 {
@@ -1368,5 +1514,11 @@ footer {
 	}
 	.page-cta {
 		padding: 80px 6%;
+	}
+}
+@media (max-height: 700px) {
+	.page-hero-content {
+		top: clamp(120px, 18svh, 160px);
+		bottom: auto;
 	}
 }
