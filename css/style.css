@@ -148,6 +148,8 @@ a {
 	display: inline-block;
 	position: relative;
 	width: .8em;
+	min-width: .8em;
+	flex: 0 0 .8em;
 	height: .8em;
 	margin-left: .18em;
 	vertical-align: -.04em;
