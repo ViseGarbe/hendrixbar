@@ -170,14 +170,19 @@ button {
 	border-bottom: 1px solid var(--overlay-white-27);
 }
 .brand {
-	font-size: 32px;
-	font-weight: 700;
-	letter-spacing: -1.6px;
-	line-height: 0.8;
+	display: inline-flex;
+	align-items: center;
+	gap: 9px;
+	font-family: "DM Sans", sans-serif;
+	font-size: 19px;
+	font-weight: 500;
+	letter-spacing: 1.1px;
+	line-height: 1;
 }
-.brand-dot,
-footer .footer-logo span {
-	color: var(--green);
+.brand img {
+	width: 42px;
+	height: 34px;
+	object-fit: contain;
 }
 .brand small {
 	display: block;
@@ -693,10 +698,18 @@ footer {
 	padding-bottom: 80px;
 }
 .footer-logo {
-	font-size: clamp(70px, 13vw, 200px);
-	font-weight: 700;
-	letter-spacing: -0.09em;
-	line-height: 0.85;
+	display: inline-flex;
+	align-items: center;
+	gap: 20px;
+	font-family: "DM Sans", sans-serif;
+	font-size: clamp(32px, 5vw, 64px);
+	font-weight: 500;
+	letter-spacing: 0.08em;
+	line-height: 1;
+}
+.footer-logo img {
+	width: clamp(70px, 10vw, 118px);
+	height: auto;
 }
 .footer-main p {
 	font:
@@ -895,17 +908,6 @@ body {
 .brand {
 	text-shadow: 0 2px 18px rgba(0, 0, 0, .24);
 }
-.brand::before {
-	content: "";
-	display: inline-block;
-	vertical-align: middle;
-	width: 34px;
-	height: 34px;
-	margin: -4px 8px 0 0;
-	background: url("../img/polar-bear-mark.png") center/contain no-repeat;
-}
-.brand-dot,
-footer .footer-logo span { color: var(--ice-bright); }
 .topbar nav a:hover,
 .text-link:hover { color: var(--ice-bright); }
 .nav-cta {
@@ -1029,7 +1031,10 @@ body:has(.legal-page) .topbar.innerbar { background: #101820; }
 	.topbar nav { background: #12212c; }
 }
 @media (max-width: 600px) {
-	.brand::before { width: 34px; height: 24px; margin-right: 7px; }
+	.brand { gap: 6px; font-size: 16px; letter-spacing: 0.7px; }
+	.brand img { width: 34px; height: 28px; }
+	.footer-logo { gap: 12px; font-size: clamp(25px, 8vw, 38px); }
+	.footer-logo img { width: 62px; }
 	.hero-content { z-index: 2; }
 	.hero h1 { font-size: clamp(64px, 17vw, 96px); }
 }
