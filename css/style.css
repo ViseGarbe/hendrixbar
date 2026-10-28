@@ -145,15 +145,51 @@ a {
 	text-decoration: none;
 }
 .arrow-icon {
-	display: inline;
-	flex: 0 0 auto;
-	font-family: "DM Sans", sans-serif;
-	font-size: 1em;
-	font-weight: inherit;
-	font-style: inherit;
-	line-height: inherit;
-	margin-left: .12em;
-	white-space: nowrap;
+	display: inline-block;
+	position: relative;
+	flex: 0 0 .78em;
+	width: .78em;
+	height: .78em;
+	margin: 0;
+	vertical-align: -.04em;
+	color: currentColor;
+}
+.arrow-icon::before,
+.arrow-icon::after {
+	content: "";
+	position: absolute;
+	box-sizing: border-box;
+}
+.arrow-up-right::before {
+	width: .78em;
+	border-top: 1.8px solid currentColor;
+	left: .02em;
+	top: .53em;
+	transform: rotate(-45deg);
+	transform-origin: center;
+}
+.arrow-up-right::after {
+	width: .34em;
+	height: .34em;
+	right: .02em;
+	top: .02em;
+	border-top: 1.8px solid currentColor;
+	border-right: 1.8px solid currentColor;
+}
+.arrow-up::before {
+	height: .72em;
+	border-left: 1.8px solid currentColor;
+	left: 50%;
+	bottom: 0;
+}
+.arrow-up::after {
+	width: .34em;
+	height: .34em;
+	left: 50%;
+	top: .02em;
+	border-top: 1.8px solid currentColor;
+	border-left: 1.8px solid currentColor;
+	transform: translateX(-50%) rotate(45deg);
 }
 button {
 	font: inherit;
@@ -402,7 +438,7 @@ blockquote em {
 .underline-link {
 	display: inline-flex;
 	justify-content: flex-start;
-	gap: 9px;
+	gap: 3px;
 	border-bottom: 1px solid var(--home-border-dark);
 	padding: 12px 0;
 	margin-top: 18px;
